@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('input').keydown(function(e) {
+    $('input').delay(300).focus().keydown(function(e) {
       if (e.which == 13){
         $.post("https://quest-6684.herokuapp.com/", {password:$('input').val().toLowerCase()}).done(function(data){
             if(data != "Hello world!"){
