@@ -1,0 +1,33 @@
+span{
+    display: none;
+    color: #fafafa;
+  }
+  *{
+  font: 30px 'Raleway', 'Open Sans';
+  }
+  ::selection{
+    background: #fafafa;
+    color: #121214;
+  }
+  body{
+    background: linear-gradient(180deg, rgba(18, 18, 20, 0.89) 0%, #121213 100%);
+    height: auto;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  input{
+    text-align: center;
+    outline: none;
+    color: gray;
+    border: none;
+    border-bottom: 1px solid gray;
+    background: none;
+    width: 400px;
+    transition-duration: 0.4s;
+  }
+  input:focus{
+    color: #fafafa;
+    border-bottom: 1px solid #fafafa;
+    transition-duration: 0.5s;
+  }
