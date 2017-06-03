@@ -3,54 +3,13 @@
   <meta charset="utf-8" />
   <script src="https://code.jquery.com/jquery-latest.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-  <style>
-  *{
-  }
-  ::selection{
-    background: #fafafa;
-    color: #121214;
-  }
-  body{
-    background: linear-gradient(180deg, rgba(18, 18, 20, 0.89) 0%, #121213 100%);
-    height: auto;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-  input{
-    text-align: center;
-    outline: none;
-    color: gray;
-    border: none;
-    border-bottom: 1px solid gray;
-    background: none;
-    width: 400px;
-    font: 30px 'Raleway', 'Open Sans';
-    transition-duration: 0.4s;
-  }
-  input:focus{
-    color: #fafafa;
-    border-bottom: 1px solid #fafafa;
-    transition-duration: 0.5s;
-  }
-  </style>
-  <script>
-  $(document).ready(function() {
-    $('input').keydown(function(e) {
-      if (e.which == 13){
-        $.post("https://quest-6684.herokuapp.com/", {password:$('input').val()}).done(function(data){
-          if (data != "fail"){
-            $('html, body').fadeOut('slow', function() {
-              window.location = data;
-          });
-        }
-          });
-        }
-      });
-    });
-  </script>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
 </head>
 <body>
-    <input placeholder="password"/>
+    <span>fail</span>
+    <div>
+      <input placeholder="password"/>
+    </div>
 </body>
 </html>
