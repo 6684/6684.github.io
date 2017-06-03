@@ -1,8 +1,9 @@
-span{
+span, a{
     display: none;
     color: #fafafa;
   }
   *{
+    text-align: center;
   font: 30px 'Raleway', 'Open Sans';
   }
   ::selection{
