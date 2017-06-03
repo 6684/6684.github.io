@@ -7,14 +7,14 @@ $(document).ready(function() {
                 $('div').fadeOut("fast").delay(2000).fadeIn('fast');
                 setTimeout(function(){
                   $("a").fadeIn('fast').delay(1000).fadeOut('fast');
-                  $('input').val("")
+                  $('input').val("").focus()
                 }, 600)
               }
               else if (data == "fail"){
                 $('div').fadeOut("fast").delay(1600).fadeIn('fast');
                 setTimeout(function(){
                   $("span").fadeIn('fast').delay(600).fadeOut('fast');
-                  $('input').val("")
+                  $('input').val("").focus()
                 }, 600)
               }
               else{
