@@ -13,7 +13,7 @@ $(document).ready(function() {
               else if (data == "fail"){
                 $('div').fadeOut("fast").delay(1600).fadeIn('fast');
                 setTimeout(function(){
-                  $("span").fadeIn('fast').delay(600).fadeOut('fast');
+                  $(".wr_pass").fadeIn('fast').delay(600).fadeOut('fast');
                   $('input').val("").delay(600).focus()
                 }, 600)
               }
@@ -23,6 +23,12 @@ $(document).ready(function() {
               });
               }
           };
+        }).fail(function() {
+            $('div').fadeOut("fast").delay(1600).fadeIn('fast');
+                setTimeout(function(){
+                  $(".fail").fadeIn('fast').delay(600).fadeOut('fast');
+                  $('input').val("").delay(600).focus()
+                }, 600)
         });
       }
     });
